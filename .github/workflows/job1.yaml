@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-first-step
-        run: echo "job1 first step text.txt" > text.txt | cat text.txt
+        run: echo "job1 first step text.txt" > text.txt && cat text.txt
