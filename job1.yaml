@@ -1,0 +1,14 @@
+name: first_workflow
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: my_first_step
+        run: cat step1.txt > echo "text from job 1 first step"
